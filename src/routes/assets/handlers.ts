@@ -142,7 +142,6 @@ export const getAssetOwnershipHistory = async (req: GetAssetOwnershipHistoryRequ
   }
 }
 
-/*
 type MintAssetsRequest = Request<{},{},MintAssetsProps>;
 export const mintAssets = async (req: MintAssetsRequest, res: CustomResponse, next: NextFunction) => {
   try {
@@ -157,7 +156,6 @@ export const mintAssets = async (req: MintAssetsRequest, res: CustomResponse, ne
     return next(e);
   }
 }
-*/
 
 type AssetSendRequest = Request<{},{},AssetSendProps>;
 export const send = async (req: AssetSendRequest, res: CustomResponse, next: NextFunction) => {
@@ -206,7 +204,6 @@ export const sendRandomAsset = async (req: SendRandomAssetRequest, res: CustomRe
   }
 }
 
-/*
 type AssetUpdateRequest = Request<{},{},AssetUpdateProps>;
 export const update = async (req: AssetUpdateRequest, res: CustomResponse, next: NextFunction) => {
   try {
@@ -223,4 +220,3 @@ export const update = async (req: AssetUpdateRequest, res: CustomResponse, next:
     return next(e);
   }
 }
-*/
