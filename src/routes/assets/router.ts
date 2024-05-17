@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getAssetHistory, getAssetMarketHistory, getAssetOwnershipHistory, getUserCollectionAssets, getUserCollectionsAssets, getUserSlotAssets, getUserSlotsAssets, info, user } from './handlers';
+import { getAssetHistory, getAssetMarketHistory, getAssetOwnershipHistory, getUserCollectionAssets, getUserCollectionsAssets, getUserSlotAssets, getUserSlotsAssets, info, user,send ,mintAssets, send,sendLowestAsset,sendRandomAsset, update   } from './handlers';
 // import { updateBulkExpressionValues, updateExpressionValues } from '../expressions/handlers';
 
 const assetsRouter: Router = Router();
@@ -21,7 +21,7 @@ assetsRouter.post('/sendRandom', sendRandomAsset);
 
 assetsRouter.put('/update', update);
 
-assetsRouter.post('/expressionValues', updateExpressionValues);
-assetsRouter.post('/expressionValuesBulk', updateBulkExpressionValues);
+// assetsRouter.post('/expressionValues', updateExpressionValues);
+// assetsRouter.post('/expressionValuesBulk', updateBulkExpressionValues);
 
 export default assetsRouter;
