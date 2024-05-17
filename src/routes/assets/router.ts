@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { getAssetHistory, getAssetMarketHistory, getAssetOwnershipHistory, getUserCollectionAssets, getUserCollectionsAssets, getUserSlotAssets, getUserSlotsAssets, info, user } from './handlers';
-import { updateBulkExpressionValues, updateExpressionValues } from '../expressions/handlers';
+// import { updateBulkExpressionValues, updateExpressionValues } from '../expressions/handlers';
 
 const assetsRouter: Router = Router();
 
