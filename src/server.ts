@@ -59,15 +59,15 @@ app.use(`${apiRoute}/asset`, assetsRouter);
 app.use(`${apiRoute}/collection`, collectionsRouter);
 app.use(`${apiRoute}/currency`, currenciesRouter);
 app.use(`${apiRoute}/equip`, equipsRouter);
-// app.use(`${apiRoute}/expression`, expressionsRouter);
-// app.use(`${apiRoute}/handcash`, handcashRouter);
+app.use(`${apiRoute}/expression`, expressionsRouter);
+app.use(`${apiRoute}/handcash`, handcashRouter);
 app.use(`${apiRoute}/listing`, listingsRouter);
-// app.use(`${apiRoute}/magic`, magicRouter);
-// app.use(`${apiRoute}/permission`, permissionRouter);
+app.use(`${apiRoute}/magic`, magicRouter);
+app.use(`${apiRoute}/permission`, permissionRouter);
 app.use(`${apiRoute}/shop`, shopRouter);
 app.use(`${apiRoute}/slot`, slotsRouter);
-// app.use(`${apiRoute}/stripe`, stripeRouter);
-// app.use(`${apiRoute}/team`, teamRouter);
+app.use(`${apiRoute}/stripe`, stripeRouter);
+app.use(`${apiRoute}/team`, teamRouter);
 app.use(`${apiRoute}/user`, usersRouter);
 
 app.get('/test', async (req: any, res: any, next: NextFunction) => {
