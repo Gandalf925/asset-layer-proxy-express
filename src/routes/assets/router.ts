@@ -15,7 +15,7 @@ assetsRouter.get('/marketHistory', getAssetMarketHistory);
 assetsRouter.get('/ownershipHistory', getAssetOwnershipHistory);
 
 // assetsRouter.post('/mint', mintAssets);
-// assetsRouter.post('/send', send);
+assetsRouter.post('/send', send);
 // assetsRouter.post('/sendLowest', sendLowestAsset);
 // assetsRouter.post('/sendRandom', sendRandomAsset);
 
