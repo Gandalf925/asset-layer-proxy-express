@@ -16,8 +16,8 @@ assetsRouter.get('/ownershipHistory', getAssetOwnershipHistory);
 
 // assetsRouter.post('/mint', mintAssets);
 assetsRouter.post('/send', send);
-// assetsRouter.post('/sendLowest', sendLowestAsset);
-// assetsRouter.post('/sendRandom', sendRandomAsset);
+assetsRouter.post('/sendLowest', sendLowestAsset);
+assetsRouter.post('/sendRandom', sendRandomAsset);
 
 // assetsRouter.put('/update', update);
 
